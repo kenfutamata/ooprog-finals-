@@ -35,10 +35,8 @@ public class FinalActivityno1_FutamataKento2 extends javax.swing.JFrame {
     private void initComponents() {
         java.awt.GridBagConstraints gridBagConstraints;
 
-        jPanel1 = new javax.swing.JPanel();
-        jPanel2 = new javax.swing.JPanel();
-        jPanel3 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
+        background = new javax.swing.JPanel();
+        question2 = new javax.swing.JLabel();
         LetterA = new javax.swing.JCheckBox();
         LetterB = new javax.swing.JCheckBox();
         LetterC = new javax.swing.JCheckBox();
@@ -46,18 +44,18 @@ public class FinalActivityno1_FutamataKento2 extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel3.setBackground(new java.awt.Color(255, 153, 51));
-        jPanel3.setLayout(new java.awt.GridBagLayout());
+        background.setBackground(new java.awt.Color(255, 153, 51));
+        background.setLayout(new java.awt.GridBagLayout());
 
-        jLabel1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        jLabel1.setText("2 The “equal to” relational operator is . ");
+        question2.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        question2.setText("2 The “equal to” relational operator is . ");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 0;
         gridBagConstraints.gridwidth = 4;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(43, 38, 0, 0);
-        jPanel3.add(jLabel1, gridBagConstraints);
+        background.add(question2, gridBagConstraints);
 
         LetterA.setBackground(new java.awt.Color(255, 153, 51));
         LetterA.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
@@ -67,7 +65,7 @@ public class FinalActivityno1_FutamataKento2 extends javax.swing.JFrame {
         gridBagConstraints.gridy = 1;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(34, 38, 0, 0);
-        jPanel3.add(LetterA, gridBagConstraints);
+        background.add(LetterA, gridBagConstraints);
 
         LetterB.setBackground(new java.awt.Color(255, 153, 51));
         LetterB.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
@@ -78,7 +76,7 @@ public class FinalActivityno1_FutamataKento2 extends javax.swing.JFrame {
         gridBagConstraints.gridwidth = 2;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(18, 38, 0, 0);
-        jPanel3.add(LetterB, gridBagConstraints);
+        background.add(LetterB, gridBagConstraints);
 
         LetterC.setBackground(new java.awt.Color(255, 153, 51));
         LetterC.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
@@ -89,7 +87,7 @@ public class FinalActivityno1_FutamataKento2 extends javax.swing.JFrame {
         gridBagConstraints.gridwidth = 3;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(18, 38, 13, 0);
-        jPanel3.add(LetterC, gridBagConstraints);
+        background.add(LetterC, gridBagConstraints);
 
         submitbutton.setBackground(new java.awt.Color(255, 255, 255));
         submitbutton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
@@ -105,24 +103,19 @@ public class FinalActivityno1_FutamataKento2 extends javax.swing.JFrame {
         gridBagConstraints.gridwidth = 5;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(18, 198, 13, 89);
-        jPanel3.add(submitbutton, gridBagConstraints);
+        background.add(submitbutton, gridBagConstraints);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(1, 1, 1))
-            .addComponent(jPanel3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(background, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(1, 1, 1)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(background, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0))
         );
 
         pack();
@@ -131,46 +124,41 @@ public class FinalActivityno1_FutamataKento2 extends javax.swing.JFrame {
 
     private void submitbuttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitbuttonActionPerformed
         // TODO add your handling code here:
-        Object source = evt.getSource(); 
-       
-         
-          if(LetterA.isSelected() && LetterB.isSelected() && LetterC.isSelected()){
+        Object source = evt.getSource();
+
+        if(LetterA.isSelected() && LetterB.isSelected() && LetterC.isSelected()){
             points=1;
-            JOptionPane.showMessageDialog(null, "You score 1 point"); 
-            FinalActivityno1_FutamataKento FA_1 = new FinalActivityno1_FutamataKento(); 
-            FA_1.displaypoint();
-             FinalActivityno1_FutamataKento3 FA_3 = new FinalActivityno1_FutamataKento3();
-            FA_3.setVisible(true);
-            setVisible(false); 
-        }
-          else if (LetterC.isSelected() && LetterB.isSelected()||LetterC.isSelected()&&LetterA.isSelected()){
-             points=2; 
-             JOptionPane.showMessageDialog(null, "You score 2 points"); 
-             FinalActivityno1_FutamataKento FA_1 = new FinalActivityno1_FutamataKento(); 
+            JOptionPane.showMessageDialog(null, "You score 1 point");
+            FinalActivityno1_FutamataKento FA_1 = new FinalActivityno1_FutamataKento();
             FA_1.displaypoint();
             FinalActivityno1_FutamataKento3 FA_3 = new FinalActivityno1_FutamataKento3();
             FA_3.setVisible(true);
             setVisible(false);
-            
-         }
-        
-          else if(LetterC.isSelected()){
-             points+=5; 
-             JOptionPane.showMessageDialog(null, "You score 5 points"); 
-            FinalActivityno1_FutamataKento FA_1 = new FinalActivityno1_FutamataKento(); 
+        }
+        else if (LetterC.isSelected() && LetterB.isSelected()||LetterC.isSelected()&&LetterA.isSelected()){
+            points=2;
+            JOptionPane.showMessageDialog(null, "You score 2 points");
+            FinalActivityno1_FutamataKento FA_1 = new FinalActivityno1_FutamataKento();
             FA_1.displaypoint();
-             FinalActivityno1_FutamataKento3 FA_3 = new FinalActivityno1_FutamataKento3();
+            FinalActivityno1_FutamataKento3 FA_3 = new FinalActivityno1_FutamataKento3();
             FA_3.setVisible(true);
             setVisible(false);
-         }
-          else if(LetterA.isSelected()||LetterB.isSelected()||LetterA.isSelected()&&LetterB.isSelected()){ 
-              JOptionPane.showMessageDialog(null, "Wrong Answer!");
-          }
-        
-         
-         
-        
-        
+
+        }
+
+        else if(LetterC.isSelected()){
+            points+=5;
+            JOptionPane.showMessageDialog(null, "You score 5 points");
+            FinalActivityno1_FutamataKento FA_1 = new FinalActivityno1_FutamataKento();
+            FA_1.displaypoint();
+            FinalActivityno1_FutamataKento3 FA_3 = new FinalActivityno1_FutamataKento3();
+            FA_3.setVisible(true);
+            setVisible(false);
+        }
+        else if(LetterA.isSelected()||LetterB.isSelected()||LetterA.isSelected()&&LetterB.isSelected()){
+            JOptionPane.showMessageDialog(null, "Wrong Answer!");
+        }
+
     }//GEN-LAST:event_submitbuttonActionPerformed
 
     /**
@@ -213,10 +201,8 @@ public class FinalActivityno1_FutamataKento2 extends javax.swing.JFrame {
     private javax.swing.JCheckBox LetterA;
     private javax.swing.JCheckBox LetterB;
     private javax.swing.JCheckBox LetterC;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel background;
+    private javax.swing.JLabel question2;
     private javax.swing.JButton submitbutton;
     // End of variables declaration//GEN-END:variables
 }

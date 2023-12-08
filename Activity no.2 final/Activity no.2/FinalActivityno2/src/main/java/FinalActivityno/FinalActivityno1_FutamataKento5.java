@@ -33,9 +33,9 @@ public class FinalActivityno1_FutamataKento5 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
+        background = new javax.swing.JPanel();
+        sentence2 = new javax.swing.JLabel();
+        sentence1 = new javax.swing.JLabel();
         LetterA = new javax.swing.JCheckBox();
         LetterB = new javax.swing.JCheckBox();
         LetterC = new javax.swing.JCheckBox();
@@ -43,13 +43,13 @@ public class FinalActivityno1_FutamataKento5 extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(255, 153, 51));
+        background.setBackground(new java.awt.Color(255, 153, 51));
 
-        jLabel2.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        jLabel2.setText("int[] num = {101, 202, 303, 404, 505, 606}");
+        sentence2.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        sentence2.setText("int[] num = {101, 202, 303, 404, 505, 606}");
 
-        jLabel1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        jLabel1.setText("5.  If you declare an integer array as follows, what is the value of num[2]?");
+        sentence1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        sentence1.setText("5.  If you declare an integer array as follows, what is the value of num[2]?");
 
         LetterA.setBackground(new java.awt.Color(255, 153, 51));
         LetterA.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
@@ -77,43 +77,43 @@ public class FinalActivityno1_FutamataKento5 extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+        javax.swing.GroupLayout backgroundLayout = new javax.swing.GroupLayout(background);
+        background.setLayout(backgroundLayout);
+        backgroundLayout.setHorizontalGroup(
+            backgroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, backgroundLayout.createSequentialGroup()
                 .addContainerGap(86, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(backgroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(sentence1)
+                    .addGroup(backgroundLayout.createSequentialGroup()
                         .addGap(25, 25, 25)
-                        .addComponent(jLabel2)))
+                        .addComponent(sentence2)))
                 .addGap(47, 47, 47))
-            .addGroup(jPanel1Layout.createSequentialGroup()
+            .addGroup(backgroundLayout.createSequentialGroup()
                 .addGap(70, 70, 70)
                 .addComponent(LetterA)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(jPanel1Layout.createSequentialGroup()
+            .addGroup(backgroundLayout.createSequentialGroup()
                 .addGap(68, 68, 68)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(backgroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(backgroundLayout.createSequentialGroup()
                         .addComponent(LetterB)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
+                    .addGroup(backgroundLayout.createSequentialGroup()
                         .addComponent(LetterC)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(submitbutton)
                         .addGap(100, 100, 100))))
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+        backgroundLayout.setVerticalGroup(
+            backgroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(backgroundLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(sentence1)
+                .addGroup(backgroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(backgroundLayout.createSequentialGroup()
                         .addGap(7, 7, 7)
-                        .addComponent(jLabel2)
+                        .addComponent(sentence2)
                         .addGap(29, 29, 29)
                         .addComponent(LetterA)
                         .addGap(18, 18, 18)
@@ -121,7 +121,7 @@ public class FinalActivityno1_FutamataKento5 extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(LetterC)
                         .addContainerGap(27, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, backgroundLayout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(submitbutton)
                         .addContainerGap())))
@@ -131,11 +131,11 @@ public class FinalActivityno1_FutamataKento5 extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(background, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(background, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -261,9 +261,9 @@ public class FinalActivityno1_FutamataKento5 extends javax.swing.JFrame {
     private javax.swing.JCheckBox LetterA;
     private javax.swing.JCheckBox LetterB;
     private javax.swing.JCheckBox LetterC;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel background;
+    private javax.swing.JLabel sentence1;
+    private javax.swing.JLabel sentence2;
     private javax.swing.JButton submitbutton;
     // End of variables declaration//GEN-END:variables
 }

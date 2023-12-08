@@ -57,8 +57,8 @@ public class FinalActivityno1_FutamataKento extends javax.swing.JFrame {
     private void initComponents() {
         java.awt.GridBagConstraints gridBagConstraints;
 
-        jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
+        background1 = new javax.swing.JPanel();
+        question1 = new javax.swing.JLabel();
         LetterA = new javax.swing.JCheckBox();
         LetterB = new javax.swing.JCheckBox();
         LetterC = new javax.swing.JCheckBox();
@@ -69,18 +69,18 @@ public class FinalActivityno1_FutamataKento extends javax.swing.JFrame {
         setBackground(new java.awt.Color(255, 255, 255));
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
-        jPanel1.setBackground(new java.awt.Color(255, 153, 51));
-        jPanel1.setLayout(new java.awt.GridBagLayout());
+        background1.setBackground(new java.awt.Color(255, 153, 51));
+        background1.setLayout(new java.awt.GridBagLayout());
 
-        jLabel1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        jLabel1.setText("1. The most basic circuitry-level computer language is .");
+        question1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        question1.setText("1. The most basic circuitry-level computer language is .");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 0;
         gridBagConstraints.gridwidth = 4;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(5, 36, 0, 41);
-        jPanel1.add(jLabel1, gridBagConstraints);
+        background1.add(question1, gridBagConstraints);
 
         LetterA.setBackground(new java.awt.Color(255, 153, 51));
         LetterA.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
@@ -91,7 +91,7 @@ public class FinalActivityno1_FutamataKento extends javax.swing.JFrame {
         gridBagConstraints.gridwidth = 2;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(41, 11, 0, 0);
-        jPanel1.add(LetterA, gridBagConstraints);
+        background1.add(LetterA, gridBagConstraints);
 
         LetterB.setBackground(new java.awt.Color(255, 153, 51));
         LetterB.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
@@ -101,7 +101,7 @@ public class FinalActivityno1_FutamataKento extends javax.swing.JFrame {
         gridBagConstraints.gridy = 2;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(5, 11, 0, 0);
-        jPanel1.add(LetterB, gridBagConstraints);
+        background1.add(LetterB, gridBagConstraints);
 
         LetterC.setBackground(new java.awt.Color(255, 153, 51));
         LetterC.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
@@ -112,7 +112,7 @@ public class FinalActivityno1_FutamataKento extends javax.swing.JFrame {
         gridBagConstraints.gridwidth = 3;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(9, 8, 27, 0);
-        jPanel1.add(LetterC, gridBagConstraints);
+        background1.add(LetterC, gridBagConstraints);
 
         submitbutton.setBackground(new java.awt.Color(255, 255, 255));
         submitbutton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
@@ -127,17 +127,17 @@ public class FinalActivityno1_FutamataKento extends javax.swing.JFrame {
         gridBagConstraints.gridy = 3;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(9, 189, 27, 41);
-        jPanel1.add(submitbutton, gridBagConstraints);
+        background1.add(submitbutton, gridBagConstraints);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(background1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(background1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -227,8 +227,8 @@ public class FinalActivityno1_FutamataKento extends javax.swing.JFrame {
     private javax.swing.JCheckBox LetterA;
     private javax.swing.JCheckBox LetterB;
     private javax.swing.JCheckBox LetterC;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel background1;
+    private javax.swing.JLabel question1;
     private javax.swing.JButton submitbutton;
     // End of variables declaration//GEN-END:variables
 }

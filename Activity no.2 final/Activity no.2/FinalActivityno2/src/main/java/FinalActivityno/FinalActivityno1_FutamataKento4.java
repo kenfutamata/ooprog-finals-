@@ -33,8 +33,8 @@ public class FinalActivityno1_FutamataKento4 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
+        background = new javax.swing.JPanel();
+        question4 = new javax.swing.JLabel();
         LetterA = new javax.swing.JCheckBox();
         LetterB = new javax.swing.JCheckBox();
         submitbutton = new javax.swing.JButton();
@@ -42,11 +42,11 @@ public class FinalActivityno1_FutamataKento4 extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(255, 153, 51));
+        background.setBackground(new java.awt.Color(255, 153, 51));
 
-        jLabel1.setBackground(new java.awt.Color(255, 153, 51));
-        jLabel1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        jLabel1.setText("4.  If m=9, then after n = m++, the value of m is");
+        question4.setBackground(new java.awt.Color(255, 153, 51));
+        question4.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        question4.setText("4.  If m=9, then after n = m++, the value of m is");
 
         LetterA.setBackground(new java.awt.Color(255, 153, 51));
         LetterA.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
@@ -69,41 +69,41 @@ public class FinalActivityno1_FutamataKento4 extends javax.swing.JFrame {
         LetterC.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         LetterC.setText("C.  9");
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+        javax.swing.GroupLayout backgroundLayout = new javax.swing.GroupLayout(background);
+        background.setLayout(backgroundLayout);
+        backgroundLayout.setHorizontalGroup(
+            backgroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, backgroundLayout.createSequentialGroup()
                 .addContainerGap(109, Short.MAX_VALUE)
-                .addComponent(jLabel1)
+                .addComponent(question4)
                 .addGap(103, 103, 103))
-            .addGroup(jPanel1Layout.createSequentialGroup()
+            .addGroup(backgroundLayout.createSequentialGroup()
                 .addGap(67, 67, 67)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(backgroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(backgroundLayout.createSequentialGroup()
                         .addComponent(LetterA)
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
+                    .addGroup(backgroundLayout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(submitbutton)
                         .addGap(89, 89, 89))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(backgroundLayout.createSequentialGroup()
+                        .addGroup(backgroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(LetterB)
                             .addComponent(LetterC))
                         .addGap(0, 0, Short.MAX_VALUE))))
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+        backgroundLayout.setVerticalGroup(
+            backgroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(backgroundLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addComponent(question4)
+                .addGroup(backgroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, backgroundLayout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(submitbutton)
                         .addContainerGap())
-                    .addGroup(jPanel1Layout.createSequentialGroup()
+                    .addGroup(backgroundLayout.createSequentialGroup()
                         .addGap(30, 30, 30)
                         .addComponent(LetterA)
                         .addGap(18, 18, 18)
@@ -117,11 +117,11 @@ public class FinalActivityno1_FutamataKento4 extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(background, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(background, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -230,8 +230,8 @@ public class FinalActivityno1_FutamataKento4 extends javax.swing.JFrame {
     private javax.swing.JCheckBox LetterA;
     private javax.swing.JCheckBox LetterB;
     private javax.swing.JCheckBox LetterC;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel background;
+    private javax.swing.JLabel question4;
     private javax.swing.JButton submitbutton;
     // End of variables declaration//GEN-END:variables
 }

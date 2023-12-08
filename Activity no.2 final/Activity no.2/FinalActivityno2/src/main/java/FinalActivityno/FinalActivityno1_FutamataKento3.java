@@ -37,7 +37,7 @@ public class FinalActivityno1_FutamataKento3 extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
+        question3 = new javax.swing.JLabel();
         LetterA = new javax.swing.JCheckBox();
         LetterB = new javax.swing.JCheckBox();
         LetterC = new javax.swing.JCheckBox();
@@ -48,15 +48,15 @@ public class FinalActivityno1_FutamataKento3 extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(255, 153, 51));
         jPanel2.setLayout(new java.awt.GridBagLayout());
 
-        jLabel1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        jLabel1.setText("3.  You can use the___ statement to terminate a switch statement.. ");
+        question3.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        question3.setText("3.  You can use the___ statement to terminate a switch statement.. ");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 0;
         gridBagConstraints.gridwidth = 5;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(22, 99, 0, 69);
-        jPanel2.add(jLabel1, gridBagConstraints);
+        jPanel2.add(question3, gridBagConstraints);
 
         LetterA.setBackground(new java.awt.Color(255, 153, 51));
         LetterA.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
@@ -212,9 +212,9 @@ public class FinalActivityno1_FutamataKento3 extends javax.swing.JFrame {
     private javax.swing.JCheckBox LetterA;
     private javax.swing.JCheckBox LetterB;
     private javax.swing.JCheckBox LetterC;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JLabel question3;
     private javax.swing.JButton submitbutton;
     // End of variables declaration//GEN-END:variables
 }

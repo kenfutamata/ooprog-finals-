@@ -31,21 +31,18 @@ public class FinalActivityno1_FutamataKentoWelcome extends javax.swing.JFrame {
     private void initComponents() {
         java.awt.GridBagConstraints gridBagConstraints;
 
-        jLabel1 = new javax.swing.JLabel();
-        jPanel2 = new javax.swing.JPanel();
+        background2 = new javax.swing.JPanel();
         welcome1 = new javax.swing.JLabel();
         welcome2 = new javax.swing.JLabel();
         usernameinput = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jPanel3 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-
-        jLabel1.setText("jLabel1");
+        submitbutton = new javax.swing.JButton();
+        background3 = new javax.swing.JPanel();
+        logo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel2.setLayout(new java.awt.GridBagLayout());
+        background2.setBackground(new java.awt.Color(255, 255, 255));
+        background2.setLayout(new java.awt.GridBagLayout());
 
         welcome1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         welcome1.setText("Welcome to the Java quiz game!");
@@ -55,7 +52,7 @@ public class FinalActivityno1_FutamataKentoWelcome extends javax.swing.JFrame {
         gridBagConstraints.gridwidth = 3;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(13, 53, 0, 105);
-        jPanel2.add(welcome1, gridBagConstraints);
+        background2.add(welcome1, gridBagConstraints);
 
         welcome2.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         welcome2.setText("Kindly Input your username");
@@ -65,7 +62,7 @@ public class FinalActivityno1_FutamataKentoWelcome extends javax.swing.JFrame {
         gridBagConstraints.gridwidth = 2;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(7, 73, 0, 0);
-        jPanel2.add(welcome2, gridBagConstraints);
+        background2.add(welcome2, gridBagConstraints);
 
         usernameinput.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -76,13 +73,13 @@ public class FinalActivityno1_FutamataKentoWelcome extends javax.swing.JFrame {
         gridBagConstraints.ipady = 21;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(44, 73, 0, 0);
-        jPanel2.add(usernameinput, gridBagConstraints);
+        background2.add(usernameinput, gridBagConstraints);
 
-        jButton1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        jButton1.setText("SUBMIT");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        submitbutton.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        submitbutton.setText("SUBMIT");
+        submitbutton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                submitbuttonActionPerformed(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -90,47 +87,47 @@ public class FinalActivityno1_FutamataKentoWelcome extends javax.swing.JFrame {
         gridBagConstraints.gridy = 3;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(62, 110, 65, 0);
-        jPanel2.add(jButton1, gridBagConstraints);
+        background2.add(submitbutton, gridBagConstraints);
 
-        jPanel3.setBackground(new java.awt.Color(255, 153, 51));
-        jPanel3.setLayout(new java.awt.GridBagLayout());
+        background3.setBackground(new java.awt.Color(255, 153, 51));
+        background3.setLayout(new java.awt.GridBagLayout());
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\kenfu\\Documents\\word\\BSIT 2\\ooprog21\\Finals\\Activity no.2 final\\Activity no.2\\FinalActivityno2\\src\\main\\java\\images\\Javalogo.png")); // NOI18N
+        logo.setIcon(new javax.swing.ImageIcon("C:\\Users\\kenfu\\Documents\\word\\BSIT 2\\ooprog21\\Finals\\Activity no.2 final\\Activity no.2\\FinalActivityno2\\src\\main\\java\\images\\Javalogo.png")); // NOI18N
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 0;
         gridBagConstraints.ipadx = 5;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(0, 0, 175, 0);
-        jPanel3.add(jLabel2, gridBagConstraints);
+        background3.add(logo, gridBagConstraints);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(background3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(0, 0, 0)
-                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(background2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(background2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(background3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void submitbuttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitbuttonActionPerformed
         // TODO add your handling code here:
         String username = usernameinput.getText(); 
         JOptionPane.showMessageDialog(null, "Welcome "+username+" you will be directed to question no.1");
         FinalActivityno1_FutamataKento FA_1 = new FinalActivityno1_FutamataKento(); 
         FA_1.setVisible(true);
         setVisible(false); 
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_submitbuttonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -168,11 +165,10 @@ public class FinalActivityno1_FutamataKentoWelcome extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel background2;
+    private javax.swing.JPanel background3;
+    private javax.swing.JLabel logo;
+    private javax.swing.JButton submitbutton;
     private javax.swing.JTextField usernameinput;
     private javax.swing.JLabel welcome1;
     private javax.swing.JLabel welcome2;
