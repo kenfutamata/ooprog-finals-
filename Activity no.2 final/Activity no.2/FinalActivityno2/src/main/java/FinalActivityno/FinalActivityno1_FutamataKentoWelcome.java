@@ -123,7 +123,7 @@ public class FinalActivityno1_FutamataKentoWelcome extends javax.swing.JFrame {
     private void submitbuttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitbuttonActionPerformed
         // TODO add your handling code here:
         String username = usernameinput.getText(); 
-        JOptionPane.showMessageDialog(null, "Welcome "+username+" you will be directed to question no.1");
+        JOptionPane.showMessageDialog(null, "Welcome "+username+"! you will be directed to question no.1");
         FinalActivityno1_FutamataKento FA_1 = new FinalActivityno1_FutamataKento(); 
         FA_1.setVisible(true);
         setVisible(false); 
