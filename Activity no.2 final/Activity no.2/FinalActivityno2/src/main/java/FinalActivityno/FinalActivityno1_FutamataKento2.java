@@ -147,7 +147,7 @@ public class FinalActivityno1_FutamataKento2 extends javax.swing.JFrame {
         }
 
         else if(LetterC.isSelected()){
-            points+=5;
+            points=5;
             JOptionPane.showMessageDialog(null, "You score 5 points");
             FinalActivityno1_FutamataKento FA_1 = new FinalActivityno1_FutamataKento();
             FA_1.displaypoint();
