@@ -156,7 +156,11 @@ public class signup extends javax.swing.JFrame {
              JOptionPane.showMessageDialog(null, "Account Recorded Successfully");
         idnumlist.add(idnumber); 
         namelist.add(name); 
-        passwordlist.add(password);  
+        passwordlist.add(password); 
+        login lg = new login(idnumlist, namelist, passwordlist);
+        lg.setidnumlist(idnumlist);
+        lg.setnamelist(namelist);
+        lg.setpasswordlist(passwordlist);
       
              
         }

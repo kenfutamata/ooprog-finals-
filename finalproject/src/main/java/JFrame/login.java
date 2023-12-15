@@ -28,7 +28,18 @@ public class login extends javax.swing.JFrame {
         initComponents();
        
       }
+    
+    public void setidnumlist(ArrayList<String>idnumlist){
+        this.idnumlist = idnumlist;
+    }
+    
+     public void setnamelist(ArrayList<String>namelist){
+        this.namelist = namelist; 
+    }
   
+      public void setpasswordlist(ArrayList<String>passwordlist){
+        this.passwordlist = passwordlist;
+    }
   
 
     /**
@@ -44,12 +55,14 @@ public class login extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         passwordinput = new javax.swing.JPasswordField();
-        idnumberandnameinput = new javax.swing.JTextField();
+        idnuminput = new javax.swing.JTextField();
         login = new javax.swing.JButton();
+        nameinput = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setText("IDNUMBER and NAME");
+        jLabel1.setText("IDNUMBER");
         jLabel1.setToolTipText("");
 
         jLabel3.setText("Password");
@@ -61,24 +74,28 @@ public class login extends javax.swing.JFrame {
             }
         });
 
+        jLabel2.setText("Name");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(55, 55, 55)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1)
-                    .addComponent(jLabel3))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 138, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(passwordinput, javax.swing.GroupLayout.DEFAULT_SIZE, 135, Short.MAX_VALUE)
-                    .addComponent(idnumberandnameinput))
-                .addGap(103, 103, 103))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(login)
-                .addGap(139, 139, 139))
+                .addGap(138, 138, 138))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(55, 55, 55)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel1)
+                    .addComponent(jLabel3)
+                    .addComponent(jLabel2))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 198, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(nameinput)
+                    .addComponent(passwordinput, javax.swing.GroupLayout.DEFAULT_SIZE, 135, Short.MAX_VALUE)
+                    .addComponent(idnuminput))
+                .addGap(103, 103, 103))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -86,14 +103,18 @@ public class login extends javax.swing.JFrame {
                 .addGap(41, 41, 41)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
-                    .addComponent(idnumberandnameinput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(33, 33, 33)
+                    .addComponent(idnuminput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(nameinput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel2))
+                .addGap(26, 26, 26)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
                     .addComponent(passwordinput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(65, 65, 65)
+                .addGap(74, 74, 74)
                 .addComponent(login)
-                .addContainerGap(92, Short.MAX_VALUE))
+                .addGap(39, 39, 39))
         );
 
         pack();
@@ -101,11 +122,11 @@ public class login extends javax.swing.JFrame {
 
     private void loginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginActionPerformed
         // TODO add your handling code here:
-        String idnumber = idnumberandnameinput.getText(); 
-        String name = idnumberandnameinput.getText(); 
+        String idnumber = idnuminput.getText(); 
+        String name = nameinput.getText(); 
         String password = String.valueOf(passwordinput.getPassword());
         
-        if(idnumlist.contains(idnumber)&&passwordlist.get(idnumlist.indexOf(idnumber)).equals(password)){
+        if(idnumlist.contains(idnumber)&&namelist.contains(name)&&passwordlist.get(idnumlist.indexOf(idnumber)).equals(password)){
             JOptionPane.showMessageDialog(null, "Login Successful");
         }
         else{
@@ -152,11 +173,13 @@ public class login extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextField idnumberandnameinput;
     private javax.swing.JTextField idnumberinput;
+    private javax.swing.JTextField idnuminput;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JButton login;
+    private javax.swing.JTextField nameinput;
     private javax.swing.JPasswordField passwordinput;
     // End of variables declaration//GEN-END:variables
 }
