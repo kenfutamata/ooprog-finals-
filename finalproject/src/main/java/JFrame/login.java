@@ -126,7 +126,7 @@ public class login extends javax.swing.JFrame {
         String name = nameinput.getText(); 
         String password = String.valueOf(passwordinput.getPassword());
         
-        if(idnumlist.contains(idnumber)&&namelist.contains(name)&&passwordlist.get(idnumlist.indexOf(idnumber)).equals(password)){
+        if(idnumlist.contains(idnumber)||namelist.contains(name)&&passwordlist.get(idnumlist.indexOf(idnumber)).equals(password)){
             JOptionPane.showMessageDialog(null, "Login Successful");
         }
         else{

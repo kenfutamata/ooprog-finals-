@@ -152,6 +152,8 @@ public class signup extends javax.swing.JFrame {
         }
         else if(idnumlist.contains(idnumber)){
             JOptionPane.showMessageDialog(null, "Account already exists");
+        }else if(!password.equals(confirmpassword)){
+            JOptionPane.showMessageDialog(null, "Password not matched");
         }else{
              JOptionPane.showMessageDialog(null, "Account Recorded Successfully");
         idnumlist.add(idnumber); 
