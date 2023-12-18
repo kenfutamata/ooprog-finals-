@@ -22,6 +22,7 @@ public class login extends javax.swing.JFrame {
      * @param passwordlist
      */
     public login(ArrayList <String> idnumlist, ArrayList<String> namelist, ArrayList<String> passwordlist) {
+        super("Login"); 
         this.idnumlist = idnumlist; 
         this.namelist = namelist; 
         this.passwordlist = passwordlist; 
@@ -50,89 +51,148 @@ public class login extends javax.swing.JFrame {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
+        java.awt.GridBagConstraints gridBagConstraints;
 
         idnumberinput = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
+        idnumberlbl = new javax.swing.JLabel();
+        passwordlbl = new javax.swing.JLabel();
         passwordinput = new javax.swing.JPasswordField();
         idnuminput = new javax.swing.JTextField();
         login = new javax.swing.JButton();
         nameinput = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
+        namelbl = new javax.swing.JLabel();
+        signup = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new java.awt.GridBagLayout());
 
-        jLabel1.setText("IDNUMBER");
-        jLabel1.setToolTipText("");
+        idnumberlbl.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        idnumberlbl.setText("IDNUMBER");
+        idnumberlbl.setToolTipText("");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridwidth = 4;
+        gridBagConstraints.ipadx = 86;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(44, 55, 0, 0);
+        getContentPane().add(idnumberlbl, gridBagConstraints);
 
-        jLabel3.setText("Password");
+        passwordlbl.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        passwordlbl.setText("Password");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 4;
+        gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.ipadx = 64;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(29, 55, 0, 0);
+        getContentPane().add(passwordlbl, gridBagConstraints);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 4;
+        gridBagConstraints.gridy = 4;
+        gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.gridheight = 2;
+        gridBagConstraints.ipadx = 106;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(26, 133, 0, 103);
+        getContentPane().add(passwordinput, gridBagConstraints);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 4;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.gridheight = 2;
+        gridBagConstraints.ipadx = 106;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(41, 133, 0, 103);
+        getContentPane().add(idnuminput, gridBagConstraints);
 
+        login.setBackground(new java.awt.Color(51, 255, 51));
+        login.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        login.setForeground(new java.awt.Color(255, 255, 255));
         login.setText("Login");
         login.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 loginActionPerformed(evt);
             }
         });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 4;
+        gridBagConstraints.gridy = 6;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(74, 148, 39, 0);
+        getContentPane().add(login, gridBagConstraints);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 4;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.gridheight = 2;
+        gridBagConstraints.ipadx = 106;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(29, 133, 0, 103);
+        getContentPane().add(nameinput, gridBagConstraints);
 
-        jLabel2.setText("Name");
+        namelbl.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        namelbl.setText("Name");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.gridwidth = 3;
+        gridBagConstraints.ipadx = 96;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(29, 55, 0, 0);
+        getContentPane().add(namelbl, gridBagConstraints);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(login)
-                .addGap(138, 138, 138))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(55, 55, 55)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel2))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 198, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(nameinput)
-                    .addComponent(passwordinput, javax.swing.GroupLayout.DEFAULT_SIZE, 135, Short.MAX_VALUE)
-                    .addComponent(idnuminput))
-                .addGap(103, 103, 103))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(41, 41, 41)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(idnuminput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(nameinput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2))
-                .addGap(26, 26, 26)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(passwordinput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(74, 74, 74)
-                .addComponent(login)
-                .addGap(39, 39, 39))
-        );
+        signup.setBackground(new java.awt.Color(102, 102, 255));
+        signup.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        signup.setForeground(new java.awt.Color(255, 255, 255));
+        signup.setText("Signup");
+        signup.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                signupActionPerformed(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 6;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(74, 81, 39, 0);
+        getContentPane().add(signup, gridBagConstraints);
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void loginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginActionPerformed
         // TODO add your handling code here:
-        String idnumber = idnuminput.getText(); 
+        try{
+        String idnumber = idnuminput.getText();
+        
         String name = nameinput.getText(); 
         String password = String.valueOf(passwordinput.getPassword());
-        
-        if(idnumlist.contains(idnumber)||namelist.contains(name)&&passwordlist.get(idnumlist.indexOf(idnumber)).equals(password)){
+        //program will search in the arraylist data if the data is found and matches the inputted fields.
+        if(idnumlist.contains(idnumber)&&namelist.contains(name)&&passwordlist.get(idnumlist.indexOf(idnumber)).equals(password)){
             JOptionPane.showMessageDialog(null, "Login Successful");
+            datainventory di  = new datainventory(); 
+            di.setVisible(true);
+            setVisible(false); 
         }
-        else{
+        else{//if the fields does not match
             JOptionPane.showMessageDialog(null, "Login Failed"); 
         }
+        }
+        catch(Exception e){
+            JOptionPane.showMessageDialog(null, e);
+        }
     }//GEN-LAST:event_loginActionPerformed
+
+    private void signupActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_signupActionPerformed
+        // TODO add your handling code here:\
+        //program will direct to signup if the user has not got an account yet
+        signup su = new signup(); 
+        su.setVisible(true);
+        setVisible(false); 
+    }//GEN-LAST:event_signupActionPerformed
 
     /**
      * @param args the command line arguments
@@ -174,12 +234,13 @@ public class login extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField idnumberinput;
+    private javax.swing.JLabel idnumberlbl;
     private javax.swing.JTextField idnuminput;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JButton login;
     private javax.swing.JTextField nameinput;
+    private javax.swing.JLabel namelbl;
     private javax.swing.JPasswordField passwordinput;
+    private javax.swing.JLabel passwordlbl;
+    private javax.swing.JButton signup;
     // End of variables declaration//GEN-END:variables
 }
